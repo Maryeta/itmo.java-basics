@@ -11,12 +11,6 @@ public class Main {
     }
 
     public static int[] changeArray(int[] inArray) {
-//        int firstElem = inArray[0];
-//        int lastElem = inArray[inArray.length - 1];
-//        inArray[0] = lastElem;
-//        inArray[inArray.length - 1] = firstElem;
-//        return inArray;
-
         int buf = inArray[inArray.length - 1];
         inArray[inArray.length - 1] = inArray[0];
         inArray[0] = buf;

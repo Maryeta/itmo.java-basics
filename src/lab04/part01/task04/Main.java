@@ -11,11 +11,9 @@ public class Main {
         int number2 = scanner.nextInt();
         System.out.println("Введите третье число: ");
         int number3 = scanner.nextInt();
+    }
 
-        boolean s = false;
-        if (number2 > number1 && number3 > number2){
-            s = true;
-        }
-        System.out.println("Результат: " + s);
+    public static void moreThan(int number1, int number2, int number3){
+        System.out.println(number2 > number1 && number3 > number2);
     }
 }
