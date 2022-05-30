@@ -2,7 +2,7 @@ package lab06.task01;
 
 import java.util.Scanner;
 
-public class Employee extends Person implements GetAge {
+public class Employee extends Person implements QueryAge {
 
     private String nameBank;
 
@@ -13,7 +13,7 @@ public class Employee extends Person implements GetAge {
 
     @Override
     void printInfo() {
-        System.out.println("Employee " + super.getFirstName() + " " + super.getLastName() + "Банк " + nameBank);
+        System.out.println("Employee " + super.getFirstName() + " " + super.getLastName() + " " + "Банк " + nameBank);
     }
 
     @Override
