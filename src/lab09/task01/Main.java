@@ -14,6 +14,7 @@ public class Main {
         collection.add("Sun");
         collection.add("Java");
         System.out.println(noDublicate(collection));
+        System.out.println(noDublicate2(collection));
     }
 
     public static Set<String> noDublicate (List<String> collection){
@@ -22,5 +23,9 @@ public class Main {
             set.add(string);
         }
         return set;
+    }
+
+    public static Set<String> noDublicate2 (List<String> collection){
+        return new HashSet<>(collection);
     }
 }
