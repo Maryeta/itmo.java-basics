@@ -5,10 +5,10 @@ public class MyThread extends Thread {
     public void run() {
         int i = 0;
         while (i < 100) {
-            //System.out.println(i);
+            System.out.println(i);
             i++;
         }
         Thread.State state = Thread.currentThread().getState();
-        System.out.println("Name: " + Thread.currentThread().getName() + " " + "State: " + Thread.currentThread().getState());
+        System.out.println("Out run method, Name: " + Thread.currentThread().getName() + " " + "State: " + Thread.currentThread().getState());
     }
 }
