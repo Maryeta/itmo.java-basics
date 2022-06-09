@@ -16,8 +16,6 @@ public class Counter extends Thread {
         for (int i = 0; i < 1000; i++) {
             increment();
         }
-//        System.out.println(getCount());
-//        Thread.yield();
     }
 
 }
