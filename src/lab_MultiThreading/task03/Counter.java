@@ -13,9 +13,12 @@ public class Counter extends Thread {
 
     @Override
     public void run() {
+        Thread.yield();
         for (int i = 0; i < 1000; i++) {
-            increment();
+            count = count + 1;
         }
+//        System.out.println(getCount());
+//        System.out.println(Thread.currentThread().getName() + "выполнен");
     }
 
 }
